@@ -121,7 +121,7 @@ export default function FormDialog({open,onSubmit,onClose}) {
     console.log(error)
     var status=false
     var err=error.slice()
-    error.map((err) => {
+    error.forEach(err=>{
       if(err===true)
       {
         status=true
