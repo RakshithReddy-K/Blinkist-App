@@ -1,7 +1,6 @@
 
 import React, {  useState } from 'react';
 import { AppBar, Container, makeStyles, Toolbar } from '@material-ui/core';
-import SearchIcon from '../../atoms/search/Search';
 import TabButton from '../../atoms/button/TabButton';
 import Library from '../Library/Library';
 import FormDialog from '../FormDialog/FormDialog';
@@ -13,6 +12,7 @@ import Account from '../../molecules/account/Account';
 import Profile from '../profile';
 import { useAuth0 } from '@auth0/auth0-react';
 import logoimg from './blinkist.jpg'
+import SearchIcon from '../../atoms/search/SearchIcon';
 
 
 const useStyles = makeStyles({

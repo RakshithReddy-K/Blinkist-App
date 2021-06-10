@@ -1,5 +1,6 @@
+import InputField from "./InputField"
+import React from 'react'
 
-import InputField from "./Input"
 
  export default
 {

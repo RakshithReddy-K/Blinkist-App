@@ -1,11 +1,12 @@
 import React from 'react';
-import Search from './Search';
+import SearchIcon from './SearchIcon';
+
 
 export default  {
     title: 'atoms/Search',
 };
 
-const Template = (args) => <Search {...args} />;
+const Template = (args) => <SearchIcon {...args} />;
 
 export const Default = Template.bind({});
 
