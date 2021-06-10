@@ -11,11 +11,11 @@ describe('Search',()=>test('check rendering',()=>{
 })
 )
 describe('Searching',()=>{
-test("check on change calllback",async ()=>
+test("check on change calllback",()=>
 {
     const onChange=jest.fn()
     render(<SearchBar onChange={onChange}/>)
-    await userEvent.type(screen.getByRole('searchbox'), 'hello');
+    userEvent.type(screen.getByRole('searchbox'), 'hello');
     expect(onChange).toHaveBeenCalledTimes(5);
 })
 })
