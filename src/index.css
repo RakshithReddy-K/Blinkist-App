@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'MyFont';
+    src: local('MyFont'), url(public/fonts/cera-pro/CeraProRegular.otf) format('otf');
+  }
+
+  body
+  {
+    font-size: 20px;
+    font-family: "CeraPRO-Regular", sans-serif, arial;
+  }
