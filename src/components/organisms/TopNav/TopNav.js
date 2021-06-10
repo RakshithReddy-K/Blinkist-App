@@ -48,16 +48,16 @@ function TopNav(props)
   const handleClose = () => {
     setOpen(false);
   };
-  const handleExplore=(category)=>
+  const handleExplore=(Category)=>
   {
-    console.log(category)
+   // console.log(Category)
     setProfile(false)
     setLibrary(false)
     setExplore(true)
-    setCategory(category)
+    setCategory(Category)
   }
-  const handleForm =(title,author,time,category,image)=>{
-    console.log(title,author,time,category)
+  const handleForm =(title,author,time,categor,image)=>{
+    //console.log(title,author,time,categor)
     // eslint-disable-next-line
     // eslint-disable-next-line no-lone-blocks
     {
@@ -65,7 +65,7 @@ function TopNav(props)
         "title": title,
         "author": author,
         "time": time,
-        "category": category,
+        "category": categor,
         "imageurl": image,
         "completed":false,
         "status": false

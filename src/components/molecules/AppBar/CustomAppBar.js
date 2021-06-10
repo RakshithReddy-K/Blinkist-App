@@ -5,10 +5,7 @@ import SearchIcon from '../../atoms/search/Search';
 import TabButton from '../../atoms/button/TabButton';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 
-const handleLibrary=()=>
-{
-    
-}
+
 function CustomAppBar(props)
 {
     return(
@@ -20,7 +17,7 @@ function CustomAppBar(props)
     </Typography>
     <SearchIcon></SearchIcon>
     <TabButton menuIcon={<ExpandMoreIcon />} name="Explore"/>
-    <TabButton name="My Library" onClick={handleLibrary}/>
+    <TabButton name="My Library" />
   </Toolbar>
   </AppBar>
         

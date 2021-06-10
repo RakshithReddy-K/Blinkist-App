@@ -1,5 +1,4 @@
 import React from 'react';
-import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import MenuButton from './MenuButton';
 
 export default {

@@ -32,8 +32,6 @@ export default function Library()
     const [value,setValue]=useState(0)
     const fetchBooks=()=>
     {
-        const axios = require('axios');
-
         axios.get('http://localhost:8080/books')
             .then(resp => {
                 var data = resp.data;

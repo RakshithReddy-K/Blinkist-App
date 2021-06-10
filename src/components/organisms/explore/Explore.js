@@ -41,7 +41,6 @@ export default function Explore({category,search})
     
     const fetchBooks=()=>
     {
-        const axios = require('axios');
         axios.get('http://localhost:8080/books')
             .then(resp => {
                 var data = resp.data;
@@ -58,17 +57,17 @@ export default function Explore({category,search})
             });    
     }
     useEffect(()=>{console.log("Executing fetch");fetchBooks();},[])
-    const searchBooks=(data,searchVal)=>
+    const searchBooks=(data,searchval)=>
     {
         var temp=[]
         console.log("books",data)
-        if(searchVal==="")
+        if(searchval==="")
             temp=data.slice()
-        data.map((book)=>{
+        data.forEach(book=>{
             var title=book.title.toUpperCase();
             var author=book.author.toUpperCase();
-            var val=searchVal.toUpperCase();
-            console.log(searchVal)
+            var val=searchval.toUpperCase();
+            //console.log(searchval)
             if(title.includes(val) || author.includes(val))
             {
                 temp.push(book)
