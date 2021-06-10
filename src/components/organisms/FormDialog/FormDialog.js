@@ -60,7 +60,7 @@ export default function FormDialog({open,onSubmit,onClose}) {
   function isValidURL(string) {
     var res = string.match(/(http(s)?:\/\/.)?(www\.)?[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_\+.~#?&//=]*)/g);
     return (res !== null)
-  };
+  }
   
  
   const validateImage=(event)=>
@@ -121,8 +121,8 @@ export default function FormDialog({open,onSubmit,onClose}) {
     console.log(error)
     var status=false
     var err=error.slice()
-    error.forEach(err=>{
-      if(err===true)
+    error.forEach(er=>{
+      if(er===true)
       {
         status=true
       }
